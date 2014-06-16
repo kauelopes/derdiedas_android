@@ -1,6 +1,7 @@
 package com.br.lm.der_die_das.app.View;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -44,44 +45,33 @@ public class GameActivity extends Activity {
 
     }
 
-    private void setaBotoes() {
-        die.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkartigo(0);
-            }
-        });
-        der.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkartigo(1);
-            }
-        });
-        das.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkartigo(2);
-            }
-        });
+
+
+    private void joga() {
+        if(wordnumber < (words.size())){
+            selectedWord.setBackgroundColor(0xff33b5e5);
+            selectedWord.setBackgroundColor(getResources().getColor(R.color.branco));
+            selectedWord.setText(words.get(wordnumber).getWord());
+        }else super.finish();
+
     }
 
     private void checkartigo(int artigo) {
         if(artigo == words.get(wordnumber).getArtigo()){
-            joga();
             Log.v("Ok, Acertou", "Ok, Acertou"+ words.size());
-        }else{
+            wordnumber++;
             joga();
+        }else{
             Log.v("Errou", "Errou");
+            selectedWord.setText(words.get(wordnumber).getArtigoS() + " " + words.get(wordnumber).getWord());
+            selectedWord.setBackgroundColor(getResources().getColor(words.get(wordnumber).getColor()));
         }
     }
 
-    private void joga() {
-        if(wordnumber < (words.size()-1)){
-            selectedWord.setText(words.get(wordnumber).getWord());
-            wordnumber++;
-        }else super.finish();
 
-    }
+
+
+
 
 
     public void le(){
@@ -116,5 +106,31 @@ public class GameActivity extends Activity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+
+
+
+
+    private void setaBotoes() {
+
+        der.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkartigo(0);
+            }
+        });
+        die.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkartigo(1);
+            }
+        });
+        das.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkartigo(2);
+            }
+        });
     }
 }

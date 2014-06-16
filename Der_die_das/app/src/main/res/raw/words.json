@@ -2,21 +2,42 @@
     "derdiedas": {
         "words": [
             {
-                "artigo": "0",
-                "palavra": "Palabvra0"
+                "artigo": "2",
+                "palavra": "Arbeitszimmer"
             },
             {
                 "artigo": "2",
-                "palavra": "paalrvva2"
+                "palavra": "Bad"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Balcon"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Flur"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Garten"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Haus"
             },
             {
                 "artigo": "1",
-                "palavra": "paavra1"
+                "palavra": "Küche"
             },
             {
-                "artigo": "2",
-                "palavra": "paodaspd2"
+                "artigo": "1",
+                "palavra": "Badewanne"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Dusche"
             }
+
         ]
   }
 }
