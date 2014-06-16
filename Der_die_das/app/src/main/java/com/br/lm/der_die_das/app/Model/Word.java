@@ -9,11 +9,9 @@ public class Word
     private String word;
     private String description;
 
-    public Word(int artigo, String word, String description){
+    public Word(int artigo, String word){
         this.artigo = artigo;
         this.word = word;
-        this. description = description;
-
     }
 
     public int getArtigo() {

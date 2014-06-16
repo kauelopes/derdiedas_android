@@ -1,22 +1,22 @@
 {
-    "Categories": {
-        "Category": [
+    "derdiedas": {
+        "words": [
             {
-                "cat_id": "3",
-                "cat_name": "test"
+                "artigo": "0",
+                "palavra": "Palabvra0"
             },
             {
-                "cat_id": "4",
-                "cat_name": "test1"
+                "artigo": "2",
+                "palavra": "paalrvva2"
             },
             {
-                "cat_id": "5",
-                "cat_name": "test2"
+                "artigo": "1",
+                "palavra": "paavra1"
             },
             {
-                "cat_id": "6",
-                "cat_name": "test3"
+                "artigo": "2",
+                "palavra": "paodaspd2"
             }
         ]
-    }
+  }
 }
