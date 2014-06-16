@@ -1,11 +1,8 @@
 package com.br.lm.der_die_das.app.View;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,13 +16,12 @@ import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.StringWriter;
-import java.io.Writer;
 import java.util.ArrayList;
 
 public class GameActivity extends Activity {
     private ArrayList<Word> words;
-    private TextView selectedWord;
+    private ArrayList<Word> selectedWords;
+    private TextView wordshow;
     private Button die, der, das;
     private int wordnumber;
 
@@ -34,12 +30,12 @@ public class GameActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        selectedWord = (TextView) findViewById(R.id.Word);
+        wordshow = (TextView) findViewById(R.id.Word);
         die = (Button) findViewById(R.id.die);
         der = (Button) findViewById(R.id.der);
         das = (Button) findViewById(R.id.das);
         setaBotoes();
-        le();
+        lejson();
         wordnumber = 0;
         joga();
 
@@ -49,32 +45,34 @@ public class GameActivity extends Activity {
 
     private void joga() {
         if(wordnumber < (words.size())){
-            selectedWord.setBackgroundColor(0xff33b5e5);
-            selectedWord.setBackgroundColor(getResources().getColor(R.color.branco));
-            selectedWord.setText(words.get(wordnumber).getWord());
+            wordshow.setBackgroundColor(0xff33b5e5);
+            wordshow.setBackgroundColor(getResources().getColor(R.color.branco));
+            wordshow.setText(words.get(wordnumber).getWord());
         }else super.finish();
 
     }
 
     private void checkartigo(int artigo) {
         if(artigo == words.get(wordnumber).getArtigo()){
-            Log.v("Ok, Acertou", "Ok, Acertou"+ words.size());
+            Log.v("Ok, Acertou", "Ok, Acertou" + words.size());
             wordnumber++;
             joga();
         }else{
             Log.v("Errou", "Errou");
-            selectedWord.setText(words.get(wordnumber).getArtigoS() + " " + words.get(wordnumber).getWord());
-            selectedWord.setBackgroundColor(getResources().getColor(words.get(wordnumber).getColor()));
+            wordshow.setText(words.get(wordnumber).getArtigoS() + " " + words.get(wordnumber).getWord());
+            wordshow.setBackgroundColor(getResources().getColor(words.get(wordnumber).getColor()));
         }
+    }
+
+
+    private void selectwords(){
+
     }
 
 
 
 
-
-
-
-    public void le(){
+    private void lejson(){
         InputStream inputStream = getResources().openRawResource(R.raw.words);
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         int ctr;

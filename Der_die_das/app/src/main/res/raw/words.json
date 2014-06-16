@@ -36,8 +36,99 @@
             {
                 "artigo": "1",
                 "palavra": "Dusche"
-            }
-
+            },
+            {
+                "artigo": "1",
+                "palavra": "Sprache"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Herr"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Frau"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Adresse"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Straße"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Land"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Bild"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Hotel"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Musik"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Spiel"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Familie"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Kind"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Baby"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Jahr"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Zahl"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Apfel"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Banane"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Birne"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Brot"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Ei"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Saft"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Salad"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Wurst"
+            },
         ]
   }
 }
