@@ -17,6 +17,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class GameActivity extends Activity {
     private ArrayList<Word> words;
@@ -31,11 +32,9 @@ public class GameActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         wordshow = (TextView) findViewById(R.id.Word);
-        die = (Button) findViewById(R.id.die);
-        der = (Button) findViewById(R.id.der);
-        das = (Button) findViewById(R.id.das);
-        setaBotoes();
         lejson();
+        selectwords();
+        setaBotoes();
         wordnumber = 0;
         joga();
 
@@ -44,29 +43,33 @@ public class GameActivity extends Activity {
 
 
     private void joga() {
-        if(wordnumber < (words.size())){
+        if(wordnumber < (selectedWords.size())){
             wordshow.setBackgroundColor(0xff33b5e5);
             wordshow.setBackgroundColor(getResources().getColor(R.color.branco));
-            wordshow.setText(words.get(wordnumber).getWord());
+            wordshow.setText(selectedWords.get(wordnumber).getWord());
         }else super.finish();
 
     }
 
     private void checkartigo(int artigo) {
-        if(artigo == words.get(wordnumber).getArtigo()){
+        if(artigo == selectedWords.get(wordnumber).getArtigo()){
             Log.v("Ok, Acertou", "Ok, Acertou" + words.size());
             wordnumber++;
             joga();
         }else{
             Log.v("Errou", "Errou");
-            wordshow.setText(words.get(wordnumber).getArtigoS() + " " + words.get(wordnumber).getWord());
-            wordshow.setBackgroundColor(getResources().getColor(words.get(wordnumber).getColor()));
+            wordshow.setText(selectedWords.get(wordnumber).getArtigoS() + " " + selectedWords.get(wordnumber).getWord());
+            wordshow.setBackgroundColor(getResources().getColor(selectedWords.get(wordnumber).getColor()));
         }
     }
 
 
     private void selectwords(){
-
+        selectedWords = new ArrayList<Word>();
+        Random rn = new Random();
+        for(int i = 0; i < 20; i++){
+            selectedWords.add(words.get(rn.nextInt(words.size())));
+        }
     }
 
 
@@ -111,7 +114,9 @@ public class GameActivity extends Activity {
 
 
     private void setaBotoes() {
-
+        die = (Button) findViewById(R.id.die);
+        der = (Button) findViewById(R.id.der);
+        das = (Button) findViewById(R.id.das);
         der.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

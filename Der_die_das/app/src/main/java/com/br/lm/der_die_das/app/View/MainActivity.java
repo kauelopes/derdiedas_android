@@ -7,12 +7,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.br.lm.der_die_das.app.R;
 
 
 public class MainActivity extends Activity {
-    private Button playButton;
+    private ImageButton playButton;
 
 
     @Override
@@ -46,7 +47,7 @@ public class MainActivity extends Activity {
 
 
     private void setupButton(){
-        playButton = (Button) findViewById(R.id.play_button);
+        playButton = (ImageButton) findViewById(R.id.playButton);
 
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override

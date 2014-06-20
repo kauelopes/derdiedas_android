@@ -11,7 +11,7 @@ import com.br.lm.der_die_das.app.R;
 
 public class SplashScreenActivity extends Activity {
 
-    int msDelayed = 3500;
+    int msDelayed = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
