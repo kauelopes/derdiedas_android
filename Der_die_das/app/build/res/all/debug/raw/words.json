@@ -1,0 +1,310 @@
+{
+    "derdiedas": {
+        "words": [
+            {
+                "artigo": "2",
+                "palavra": "Bad"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Balcon"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Flur"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Garten"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Haus"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Küche"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Badewanne"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Dusche"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Sprache"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Herr"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Frau"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Adresse"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Straße"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Land"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Bild"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Hotel"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Musik"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Spiel"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Familie"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Kind"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Baby"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Jahr"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Zahl"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Apfel"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Banane"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Birne"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Brot"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Ei"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Saft"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Salad"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Wurst"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Fisch"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Getränk"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Kartoffel"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Tomate"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Bier"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Butter"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Flaisch"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Gemüse"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Milch"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Tee"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Wien"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Essen"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Euro"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Person"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Farbe"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Zimmer"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Möbel"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Zeit"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Sofa"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Tisch"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Tag"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Morgen"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Mittag"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Nacht"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Woche"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Montag"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Dienstag"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Mittwoch"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Fußball"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Frühstück"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Bahnhof"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Kino"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Moment"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Regen"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Sonne"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Wetter"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Wind"
+            },
+            {
+                "artigo": "1",
+                "palavra": "Freizeit"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Sport"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Norden"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Süden"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Westen"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Osten"
+            },
+            {
+                "artigo": "0",
+                "palavra": "Anzug"
+            },
+            {
+                "artigo": "2",
+                "palavra": "Buch"
+            }
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Kaue/projetos/Android/derdiedas/derdiedas_android/Der_die_das/app/build/intermediates/exploded-aar/com.jjoe64/graphview/4.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ae24ad61a573cd1faf8261f5ec6d8f0cb58ddaad">
+        <dex dex="/Users/Kaue/projetos/Android/derdiedas/derdiedas_android/Der_die_das/app/build/intermediates/pre-dexed/debug/classes-f6032f779a41b80ba84f45129891da48de8bf69b.jar" />
+    </item>
+    <item
+        jar="/Users/Kaue/projetos/Android/derdiedas/derdiedas_android/Der_die_das/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/Users/Kaue/projetos/Android/derdiedas/derdiedas_android/Der_die_das/app/build/intermediates/pre-dexed/debug/classes-7404e34b06931d7624274957ea7c21f9aca741e2.jar" />
+    </item>
+    <item
+        jar="/Developer/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/Users/Kaue/projetos/Android/derdiedas/derdiedas_android/Der_die_das/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-0712fdc33201dc297b97932dc27c6a61e91057a7.jar" />
+    </item>
+    <item
+        jar="/Users/Kaue/projetos/Android/derdiedas/derdiedas_android/Der_die_das/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/Users/Kaue/projetos/Android/derdiedas/derdiedas_android/Der_die_das/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-2ba6630dff5b3bbda10ff7e7927cdba311a58956.jar" />
+    </item>
+    <item
+        jar="/Users/Kaue/projetos/Android/derdiedas/derdiedas_android/Der_die_das/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/Users/Kaue/projetos/Android/derdiedas/derdiedas_android/Der_die_das/app/build/intermediates/pre-dexed/debug/classes-f7be169a645f9caed9cc6d584e8a881992c2ad7d.jar" />
+    </item>
+
+</items>

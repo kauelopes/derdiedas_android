@@ -8,12 +8,42 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.br.lm.der_die_das.app.View.MainActivity">
 
-    <ImageButton
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Jogar"
         android:id="@+id/playButton"
-        android:src="@drawable/web_hi_res_512"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:background="@color/das"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estatísticas"
+        android:id="@+id/estatisticasButton"
+        android:textSize="20dp"
+        android:layout_below="@+id/playButton"
+        android:layout_centerHorizontal="true"
+        android:background="@color/der"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configurações"
+        android:id="@+id/configButton"
+        android:textSize="20dp"
+        android:layout_below="@+id/estatisticasButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/die"
+        android:singleLine="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
 
 </RelativeLayout>

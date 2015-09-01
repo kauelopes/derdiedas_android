@@ -23,16 +23,16 @@
 
             <TextView
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Wört"
                 android:id="@+id/Word"
-                android:layout_marginTop="116dp"
+                android:layout_marginTop="0dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:textAlignment="center"
-                android:gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
                 android:textSize="30dp" />
         </RelativeLayout>
 

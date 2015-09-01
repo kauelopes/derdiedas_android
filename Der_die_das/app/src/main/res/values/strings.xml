@@ -6,5 +6,11 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_estatisticas">EstatisticasActivity</string>
+    <string name="title_activity_temas">TemasActivity</string>
+    <string name="btnColors">Cores</string>
+    <string name="btnObjects">Objetos</string>
+    <string name="btnAnimals">New Button</string>
+    <string name="btnAdjectives">New Button</string>
 
 </resources>
