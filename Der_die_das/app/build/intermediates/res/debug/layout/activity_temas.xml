@@ -81,8 +81,8 @@
                 <Button
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Escritório"
-                    android:id="@+id/btn_escritorio"
+                    android:text="Natureza"
+                    android:id="@+id/btn_natureza"
                     android:layout_weight="1"
                     android:paddingTop="50dp"
                     android:paddingBottom="50dp" />
@@ -115,33 +115,8 @@
                 <Button
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Profissões"
-                    android:id="@+id/btn_profissoes"
-                    android:layout_weight="1"
-                    android:paddingTop="50dp"
-                    android:paddingBottom="50dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:gravity="center" >
-
-                <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Esportes"
-                    android:id="@+id/btn_esportes"
-                    android:layout_weight="1"
-                    android:paddingTop="50dp"
-                    android:paddingBottom="50dp" />
-
-                <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Lugares"
-                    android:id="@+id/btn_lugares"
+                    android:text="Corpo"
+                    android:id="@+id/btn_corpo"
                     android:layout_weight="1"
                     android:paddingTop="50dp"
                     android:paddingBottom="50dp" />

@@ -2,7 +2,9 @@ package com.br.lm.der_die_das.app.View;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,9 +19,14 @@ import com.br.lm.der_die_das.app.R;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.nio.LongBuffer;
 import java.util.ArrayList;
 import java.util.Random;
@@ -31,7 +38,10 @@ public class GameActivity extends Activity {
     private Button die, der, das;
     private int wordnumber;
     private int acertos;
+    private int numeroDePalavras;
     private String tema;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +52,7 @@ public class GameActivity extends Activity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             tema  = extras.getString("tema");
+            numeroDePalavras = extras.getInt("numeroDePalavras");
             Log.d("Tema", tema);
         }
 
@@ -49,10 +60,13 @@ public class GameActivity extends Activity {
         acertos = 0;
         setContentView(R.layout.activity_game);
         wordshow = (TextView) findViewById(R.id.Word);
-        lejson(tema);
-        selectwords(10);
+        if(tema.equals("Todos")) {
+            casoGeral();
+        }else{
+            lejson(tema);
+            selectedWords = selectwords(numeroDePalavras);
+        }
         setaBotoes();
-
         joga();
 
     }
@@ -62,7 +76,13 @@ public class GameActivity extends Activity {
             wordshow.setBackgroundColor(getResources().getColor(R.color.branco));
             wordshow.setText(selectedWords.get(wordnumber).getWord());
         }else{
-            alertView("De 20 palavras você acertou " + acertos);
+            die.setClickable(false);
+            der.setClickable(false);
+            das.setClickable(false);
+            Intent returnIntent = new Intent();
+            returnIntent.putExtra("Acertos",acertos );
+            setResult(RESULT_OK, returnIntent);
+            alertView("De " + numeroDePalavras + " palavras você acertou " + acertos);
         }
 
     }
@@ -86,48 +106,63 @@ public class GameActivity extends Activity {
         dialog.setTitle("Hello")
                 .setIcon(R.drawable.ic_launcher)
                 .setMessage(message)
-//  .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-//      public void onClick(DialogInterface dialoginterface, int i) {
-//          dialoginterface.cancel();
-//          }})
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialoginterface, int i) {
+                    }
+                }).show()
+                .setOnDismissListener(new DialogInterface.OnDismissListener() {
+                    @Override
+                    public void onDismiss(DialogInterface dialog) {
                         finish();
                     }
-                }).show();
+                });
     }
 
-    private void selectwords(int numero){
-        selectedWords = new ArrayList<Word>();
+    private ArrayList<Word> selectwords(int numero){
+        ArrayList selectedWords = new ArrayList<Word>();
         Random rn = new Random();
         for(int i = 0; i <numero; i++){
             int j = rn.nextInt(words.size());
             selectedWords.add(words.get(j));
             words.remove(j);
         }
+        return selectedWords;
     }
 
+    private void casoGeral(){
+        String[] casos = {"animais", "casa", "comidas", "roupas", "corpo", "natureza"};
+        selectedWords = new ArrayList<Word>();
+        Random rn = new Random();
+        for(String a : casos){
+            lejson(a);
+            ArrayList h = selectwords(3);
+            selectedWords.addAll(h);
+        }
+    }
 
     private void lejson(String category){
         //Passa o arquivo para a memória
         category = category.toLowerCase();
         int a = this.getResources().getIdentifier("raw/"+category, "raw",getPackageName());
-        InputStream inputStream = getResources().openRawResource(a);
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         int ctr;
         try {
+            InputStream inputStream = getResources().openRawResource(a);
             ctr = inputStream.read();
             while (ctr != -1) {
                 output.write(ctr);
                 ctr = inputStream.read();
             }
             inputStream.close();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
+            finish();
         }
         try {
+            Log.v("ABC", "Step 1");
             // Parse the data into jsonobject to get original data in form of json.
             JSONObject jObject = new JSONObject(output.toString());
+            Log.v("ABC", "Step 2");
             Log.v("Output", output.toString());
             Log.v("Categoria", category);
             JSONObject jObjectResult = jObject.getJSONObject("derdiedas");
@@ -171,3 +206,6 @@ public class GameActivity extends Activity {
         });
     }
 }
+
+
+

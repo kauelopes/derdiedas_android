@@ -24,7 +24,7 @@ class WordsJsonMaker{
 				b = lePalavra(a);
 				addPalavra(w, b);{}
 			}else
-				System.out.println("OPS!");
+				System.out.println("OPS!");	
 		}
 		formataFinal(w);
 		w.close();
@@ -36,7 +36,7 @@ class WordsJsonMaker{
 	public static void formataInicio(PrintWriter w, String a){
 		w.println("{");
 		w.println("\"derdiedas\": {");
-		w.println("\"a\":[");
+		w.println("\"+" +a +  "\":[");
 	}
 
 

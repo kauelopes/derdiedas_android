@@ -728,14 +728,17 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060005;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070007;
+        public static final int abc_search_url_text_holo=0x7f07000a;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070001;
         public static final int abc_search_url_text_selected=0x7f070002;
         public static final int branco=0x7f070003;
-        public static final int das=0x7f070004;
-        public static final int der=0x7f070005;
-        public static final int die=0x7f070006;
+        public static final int bronze=0x7f070004;
+        public static final int das=0x7f070005;
+        public static final int der=0x7f070006;
+        public static final int die=0x7f070007;
+        public static final int ouro=0x7f070008;
+        public static final int prata=0x7f070009;
     }
     public static final class dimen {
         public static final int abc_action_bar_default_height=0x7f090000;
@@ -866,7 +869,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f080015;
         public static final int action_menu_presenter=0x7f080016;
         public static final int action_mode_close_button=0x7f080024;
-        public static final int action_settings=0x7f080050;
+        public static final int action_settings=0x7f08004e;
         public static final int activity_chooser_view_content=0x7f080025;
         public static final int always=0x7f08000f;
         public static final int beginning=0x7f08000a;
@@ -874,10 +877,8 @@ containing a value of this type.
         public static final int btn_animais=0x7f080049;
         public static final int btn_casa=0x7f080047;
         public static final int btn_comidas=0x7f08004b;
-        public static final int btn_escritorio=0x7f08004a;
-        public static final int btn_esportes=0x7f08004e;
-        public static final int btn_lugares=0x7f08004f;
-        public static final int btn_profissoes=0x7f08004d;
+        public static final int btn_corpo=0x7f08004d;
+        public static final int btn_natureza=0x7f08004a;
         public static final int btn_roupas=0x7f08004c;
         public static final int btn_todos=0x7f080046;
         public static final int checkbox=0x7f08002d;
@@ -980,7 +981,10 @@ containing a value of this type.
     public static final class raw {
         public static final int animais=0x7f050000;
         public static final int casa=0x7f050001;
-        public static final int words=0x7f050002;
+        public static final int comidas=0x7f050002;
+        public static final int corpo=0x7f050003;
+        public static final int natureza=0x7f050004;
+        public static final int roupas=0x7f050005;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f0b0000;
