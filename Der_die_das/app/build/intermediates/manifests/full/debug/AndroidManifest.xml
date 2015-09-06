@@ -8,14 +8,6 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
-    <android:uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -24,7 +16,7 @@
         <activity
             android:name="com.br.lm.der_die_das.app.View.SplashScreenActivity"
             android:configChanges="keyboardHidden|orientation|keyboard"
-            android:label=""
+            android:label="Der Die Das"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

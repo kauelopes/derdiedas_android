@@ -82,8 +82,21 @@ public class GameActivity extends Activity {
             Intent returnIntent = new Intent();
             returnIntent.putExtra("Acertos",acertos );
             setResult(RESULT_OK, returnIntent);
-            alertView("De " + numeroDePalavras + " palavras você acertou " + acertos);
+            mensagemFinal();
+
         }
+    }
+
+    private void mensagemFinal(){
+        if(numeroDePalavras==acertos){
+            if(acertos==18){
+                alertView("Parabéns, você manda muito nessa categoria!");
+            }else{
+                alertView("Parabéns, você acertou todas as " + numeroDePalavras + "! Agora vamos aumentar para  " + (numeroDePalavras + 5)+ " palavras!");
+            }
+        }else
+            alertView("De " + numeroDePalavras + " palavras você acertou " + acertos + "! Acerte todas para passar de nível!");
+
 
     }
 
@@ -135,7 +148,7 @@ public class GameActivity extends Activity {
         Random rn = new Random();
         for(String a : casos){
             lejson(a);
-            ArrayList h = selectwords(3);
+            ArrayList h = selectwords(numeroDePalavras/casos.length);
             selectedWords.addAll(h);
         }
     }

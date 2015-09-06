@@ -4,7 +4,8 @@
     <color name="die">#FFBB33</color>
     <color name="das">#99CC00</color>
     <color name="branco">#ffffffff</color>
+    <color name="latao">#ff57627c</color>
     <color name="bronze">#965A38</color>
-    <color name="prata">#CCC2C2</color>
-    <color name="ouro">#D9A441</color>
+    <color name="prata">#EDEDF4</color>
+    <color name="ouro">#FABE28</color>
 </resources>

@@ -39,7 +39,6 @@ public class TemasActivity extends Activity implements View.OnClickListener {
         //Remove notification bar
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         ptn = parseToArrayOfInteger(readFromFile());
-        Log.e("aess", readFromFile());
         setContentView(R.layout.activity_temas);
         setBotoes();
         colorThemes();
@@ -51,7 +50,6 @@ public class TemasActivity extends Activity implements View.OnClickListener {
             botoes[i].setOnClickListener(this);
         }
     }
-
 
     private void writeToFile(String data) {
         try {
@@ -116,12 +114,14 @@ public class TemasActivity extends Activity implements View.OnClickListener {
         int i = 0;
         for(Button b : botoes){
             int pontuacao = ptn[i];
-            if(pontuacao>=5 && pontuacao<10) {
+            if(pontuacao<5){
+                b.getBackground().setColorFilter(getResources().getColor(R.color.latao), PorterDuff.Mode.MULTIPLY);
+            }else if(pontuacao>=5 && pontuacao<10) {
                 b.getBackground().setColorFilter(getResources().getColor(R.color.bronze), PorterDuff.Mode.MULTIPLY);
             }else if(pontuacao>=10 && pontuacao<15){
-                b.setBackgroundColor(getResources().getColor(R.color.prata));
+                b.getBackground().setColorFilter(getResources().getColor(R.color.prata), PorterDuff.Mode.MULTIPLY);
             }else if(ptn[i]>=15){
-                b.setBackgroundColor(getResources().getColor(R.color.ouro));
+                b.getBackground().setColorFilter(getResources().getColor(R.color.ouro), PorterDuff.Mode.MULTIPLY);
             }
             i++;
         }
@@ -163,7 +163,6 @@ public class TemasActivity extends Activity implements View.OnClickListener {
         }
         return txt;
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
